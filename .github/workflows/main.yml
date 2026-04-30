@@ -16,5 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Test the code
-        run: echo "Replace this with the test code"
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
